@@ -72,6 +72,8 @@ print(new_list)
 
 numbers = [34.6, -203.4, 44.9, 68.3, -12.2, 44.6, 12.7]
 
+newlist = [int(i) for i in numbers if i > 0]
+print ("newlist:" ,newlist)
 
 
 
@@ -81,6 +83,9 @@ numbers = [34.6, -203.4, 44.9, 68.3, -12.2, 44.6, 12.7]
 sentence = "the quick brown fox jumps over the lazy dog"
 words = sentence.split()
 
+integers = [len(i) for i in words if i != "the"]
+print ("integers:", integers)
+
 
 
 ## Given dictionary is consisted of vehicles and their weights in kilograms. 
@@ -89,3 +94,6 @@ words = sentence.split()
 
 dict={"Sedan": 1500, "SUV": 2000, "Pickup": 2500, "Minivan": 1600, "Van": 2400, 
 "Semi": 13600, "Bicycle": 7, "Motorcycle": 110}
+
+vehicles = [i.upper() for i in dict if dict[i]<5000]
+print ("VEHICLES:",vehicles)
