@@ -83,8 +83,8 @@ print ("newlist:" ,newlist)
 sentence = "the quick brown fox jumps over the lazy dog"
 words = sentence.split()
 
-integers = [len(i) for i in words if i != "the"]
-print ("integers:", integers)
+word_length = [len(word) for word in words if word != "the"]
+print ("word length:", word_length)
 
 
 
@@ -97,3 +97,12 @@ dict={"Sedan": 1500, "SUV": 2000, "Pickup": 2500, "Minivan": 1600, "Van": 2400,
 
 vehicles = [i.upper() for i in dict if dict[i]<5000]
 print ("VEHICLES:",vehicles)
+
+
+
+
+
+####extra
+inval=input("please input a vehicle weight:")
+vehicles2 = [i for i in dict if dict[i] == int(inval)]
+print ('vehicles2:',vehicles2)

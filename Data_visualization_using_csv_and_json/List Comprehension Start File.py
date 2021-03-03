@@ -22,6 +22,8 @@ for i in old_list:
 
 #### list comprehension format    i = [expression, iteration, condition] $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
+### MIDTERM QUESTION  -------------------- what will the correct output of a list comprehension be?
+
 
 
 #The list comprehension starts with a '[' and ']', to help you remember that the
